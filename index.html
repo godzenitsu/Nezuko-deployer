@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/asta.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/imOAWEN.jpeg">
     <link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 <body>
@@ -10,7 +10,7 @@
                 <input type="text" id="name" name="username" required="">
                 <label>github username</label>
             </div>
-            <a onclick="verify();" data-platform="https://www.heroku.com/deploy?template=https://github.com/Astropeda/Asta-Md">
+            <a onclick="verify();" data-platform="https://www.heroku.com/deploy?template=https://github.com/godzenitsu/NEZUKO-V2">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -24,7 +24,7 @@
 
 
 
-        const urls = 'https://www.heroku.com/deploy?template=https://github.com/Astropeda/Asta-Md';  
+        const urls = 'https://www.heroku.com/deploy?template=https://github.com/godzenitsu/NEZUKO-V2';  
 
 
 
@@ -48,7 +48,7 @@
                             const repo = await axios(`${gitApi}/repos/${text}/Asta`);
                         } catch (e) {
                             alert("Fork The Repository First.\nClick The 'OK' Button To Fork")
-                            return location.replace(`https://github.com/${owner}/Asta-Md/fork`)
+                            return location.replace(`https://github.com/${owner}/NEZUKO-V2/fork`)
                         }
                     }      
                     if(urls && ( urls.startsWith("https") || urls.startsWith("Http") ) ) window.location.replace(`${urls}`)       
