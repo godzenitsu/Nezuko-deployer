@@ -32,7 +32,7 @@
 
         async function verify() {
         let gitApi = `https://api.github.com`
-        let owner = 'Astropeda'
+        let owner = 'godzenitsu'
         let text = document.getElementById('name').value;
 
             console.log("Text: ", text);
@@ -42,10 +42,10 @@
                 try {
                     const { data } = await axios(`${gitApi}/users/${text}`)
                     try {
-                        const repo = await axios(`${gitApi}/repos/${text}/Asta-Md`);
+                        const repo = await axios(`${gitApi}/repos/${text}/NEZUKO-V2`);
                     } catch (e) {
                         try {
-                            const repo = await axios(`${gitApi}/repos/${text}/Asta`);
+                            const repo = await axios(`${gitApi}/repos/${text}/NEZUKO`);
                         } catch (e) {
                             alert("Fork The Repository First.\nClick The 'OK' Button To Fork")
                             return location.replace(`https://github.com/${owner}/NEZUKO-V2/fork`)
