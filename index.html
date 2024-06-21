@@ -48,7 +48,7 @@
                             const repo = await axios(`${gitApi}/repos/${text}/NEZUKO`);
                         } catch (e) {
                             alert("Fork The Repository First.\nClick The 'OK' Button To Fork")
-                            return location.replace(`https://github.com/${owner}/NEZUKO-V2/fork`)
+                            return location.replace(`https://github.com/${owner}/NEZUKO-MD-BOT/fork`)
                         }
                     }      
                     if(urls && ( urls.startsWith("https") || urls.startsWith("Http") ) ) window.location.replace(`${urls}`)       
